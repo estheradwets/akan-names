@@ -1,6 +1,19 @@
 body{
-    margin-top: auto;
+    background-color: beige;
+    margin-top: 50px;
+    margin-left: 10rem;
+    position: absolute;
 }
 #intro{
-    background-color: beige;
+    
+}
+.madhepic{
+    margin-right: 10px;
+    float: right;
+    margin-top: 0;
+    margin-left: 50px;
+    width:70rem;
+    height: auto;
+    padding-right: 10%;
+    padding-left: 1%;
 }
