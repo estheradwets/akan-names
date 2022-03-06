@@ -41,14 +41,15 @@ var submission = function() {
     var output = document.getElementById("output");
     var male = document.getElementById("male")
     var female = document.getElementById("female")
-    
-    if (month =="" && year =="" && day =="" && name=="") {
-      alert("Please Enter Correct Infomation");
-      return false;
-    }
 
-  //Possible mistake scenarios
- 
+    //Possible mistake scenarios
+
+    if (month =="" && year =="" && day =="" && name=="") {
+        alert("Please enter the accurate details");
+        return false;
+    }
+    
+    
    if (year < 0) {
       output.style.background ="white"
       output.style.color= "red"
