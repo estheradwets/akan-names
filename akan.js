@@ -1,12 +1,9 @@
-var month = parseInt(document.getElementById("month").value);
-var year = parseInt(document.getElementById("year").value);
-var day = parseInt(document.getElementById("day").value);
-var name =(document.getElementById("name").value);
-var date0fbirth = new Date(year + "/" + month + "/" + day);
-var results = date0fbirth.getDay();
-var output = document.getElementById("output");
-var male = document.getElementById("male")
-var female = document.getElementById("female")
+/*  */
+const gamePageBtn = document.getElementById("btn");
+const descriptionPageBtn = document.getElementById("desc-btn");
+const descriptionPage = document.getElementById("description");
+const gamePage = document.getElementById("playsection");
+const goBackBtn = document.getElementById("go-back");
 
 var daysOfTheWeek = [
     "Sunday",
@@ -39,6 +36,18 @@ var daysOfTheWeek = [
     "Ama"
   ];
 
+  gamePageBtn.addEventListener("click", showGamePage);
+  goBackBtn.addEventListener("click", showDescriptionPage);
+
+  function showGamePage() {
+    descriptionPage.classList.add("hidden");
+    gamePage.classList.remove("show");
+  }
+
+  function showDescriptionPage() {
+    descriptionPage.classList.add("hidden");
+    gamePage.classList.remove("show");
+  }
 
 //Usual Days of the week as initial functions
 /* 
