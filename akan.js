@@ -49,7 +49,7 @@ var submission = function() {
         return false;
     }
     
-    
+
    if (year < 0) {
       output.style.background ="white"
       output.style.color= "red"
@@ -74,13 +74,12 @@ var submission = function() {
   //  }
   
     if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-      output.style.background ="lime"
-        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+      output.style.background ="blue"
+        output.innerHTML = "Congrats! " + name + " you were born on a " + daysOfTheWeek[results] + ", your Akan name is " + maleNames[results];
     }
      else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
-      output.style.background ="lime"
-      output.style.background ="red"
-      output.innerHTML = "Congrats! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+      output.style.background ="hotpink"
+      output.innerHTML = "Congrats! " + name + " you were born on a " + daysOfTheWeek[results] + ", your Akan name is " + femaleNames[results];
   }
   
   };
