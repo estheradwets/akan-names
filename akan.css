@@ -59,17 +59,17 @@ img{
 }
 
 
-.formcontrol{
-    height: 90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.form-control{
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 50px;
 }
 
-.formcontrol label{
+.form-control label{
     font-size: 30px;
 }
 
-.formcontrol input{
+.form-control input{
     display: block;
     height: 50px;
     border-radius: 8px;
@@ -77,7 +77,7 @@ img{
     width: 600px;
 }
 
-.formcontrol input[type="radio"]{
+.form-control input[type="radio"]{
     height: 20px;
     width: 20px;
 }
