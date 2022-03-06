@@ -1,5 +1,47 @@
-//Usual Days of the week as initial functions
+var month = parseInt(document.getElementById("month").value);
+var year = parseInt(document.getElementById("year").value);
+var day = parseInt(document.getElementById("day").value);
+var name =(document.getElementById("name").value);
+var date0fbirth = new Date(year + "/" + month + "/" + day);
+var results = date0fbirth.getDay();
+var output = document.getElementById("output");
+var male = document.getElementById("male")
+var female = document.getElementById("female")
 
+var daysOfTheWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+
+  //Male Akan names
+   var maleNames = [
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame"
+  ];
+  //Female Akan Names
+  var femaleNames = [
+    "Akosua",
+    " Adwoa",
+    "Abenaa",
+    "Akua",
+    "Yaa",
+    "Afua",
+    "Ama"
+  ];
+
+
+//Usual Days of the week as initial functions
+/* 
 var submission = function() {
     var daysOfTheWeek = [
       "Sunday",
@@ -82,4 +124,4 @@ var submission = function() {
       output.innerHTML = "Congrats! " + name + " you were born on a " + daysOfTheWeek[results] + ", your Akan name is " + femaleNames[results];
   }
   
-  };
+  }; */
