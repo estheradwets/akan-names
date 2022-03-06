@@ -1,9 +1,18 @@
-/*  */
+const month = document.getElementById("month").value;
+const year = document.getElementById("year").value;
+const day = document.getElementById("date").value;
+const jina = document.getElementById("jina").value;
+const date0fbirth = new Date(year + "/" + month + "/" + day);
+const results = date0fbirth.getDay();
+const male = document.getElementById("male")
+const female = document.getElementById("female")
+
 const gamePageBtn = document.getElementById("btn");
 const descriptionPageBtn = document.getElementById("desc-btn");
 const descriptionPage = document.getElementById("description");
 const gamePage = document.getElementById("playsection");
 const goBackBtn = document.getElementById("go-back");
+const submitBtn = document.getElementById("submitDetails");
 
 var daysOfTheWeek = [
     "Sunday",
@@ -38,6 +47,7 @@ var daysOfTheWeek = [
 
   gamePageBtn.addEventListener("click", showGamePage);
   goBackBtn.addEventListener("click", showDescriptionPage);
+  submitBtn.addEventListener("submit", submitDetailsFromUser);
 
   function showGamePage() {
     descriptionPage.classList.add("hidden");
@@ -49,9 +59,48 @@ var daysOfTheWeek = [
     gamePage.classList.remove("show");
   }
 
+  function submitDetailsFromUser(e) {
+      e.preventDefault();
+      console.log(month);
+      console.log(day);
+      console.log(year);
+      console.log(jina);
+  }
 //Usual Days of the week as initial functions
-/* 
-var submission = function() {
+
+var daysOfTheWeek = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+
+  //Male Akan names
+   var maleNames = [
+    "Kwasi",
+    "Kwadwo",
+    "Kwabena",
+    "Kwaku",
+    "Yaw",
+    "Kofi",
+    "Kwame"
+  ];
+  //Female Akan Names
+  var femaleNames = [
+    "Akosua",
+    " Adwoa",
+    "Abenaa",
+    "Akua",
+    "Yaa",
+    "Afua",
+    "Ama"
+  ];
+
+
+/* var submission = function() {
     var daysOfTheWeek = [
       "Sunday",
       "Monday",
@@ -133,4 +182,23 @@ var submission = function() {
       output.innerHTML = "Congrats! " + name + " you were born on a " + daysOfTheWeek[results] + ", your Akan name is " + femaleNames[results];
   }
   
-  }; */
+  };
+ */
+  /* 
+function submitDetailsFromUser(e){
+    e.preventDefault();
+    if(year === "" || date === "" || month === "" || jina === ""){
+        alert("Please enter correct credentials");
+    }
+
+
+    if(year < 1900 || month < 0 || month > 11 || date < 0 || date > 31){
+        alert("Please enter valid date details");
+    }
+
+    console.log(year);
+    console.log(date);
+    console.log(month);
+    console.log(jina);
+
+} */
