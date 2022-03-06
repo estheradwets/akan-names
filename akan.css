@@ -58,6 +58,7 @@ img{
 .formcontrol{
     height: 90px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .formcontrol label{
@@ -75,6 +76,12 @@ img{
 .formcontrol input[type="radio"]{
     height: 20px;
     width: 20px;
+}
+
+.gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
